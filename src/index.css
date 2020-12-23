@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Bungee+Inline&family=Carter+One&family=ZCOOL+KuaiLe&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Round', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cn {
+    font-family: 'ZCOOL KuaiLe', cursive;
 }
+
+.co {
+    font-family: 'Carter One', cursive;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    padding:10px 30px;
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed;
+}
+
+header > nav {
+    width: 500px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#nav-logo {
+    height: 70px;
+    float: left;
+}
+
+#search-bar{
+    width: 400px;
+    height:50%;
+    background-color: rgb(255, 255, 255);
+
+    padding: 0;
+    margin: 0;
+}
+
+#search-bar > input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding-left: 5px;
+
+    font-size:1.2rem;
+}
+
+#search-bar > button {
+    width: 10%;
+    height: 100%;
+    border: none;
+    background-color:transparent;
+
+    font-size:1.2rem;
+}
+
+#search-bar > button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    header > nav {
+        display: none;
+    }
+
+    #search-bar {
+        width: 100vw;
+    }
+}
+
+section:first-of-type {
+    margin-top: 100px;
+}
+
+
+.title{
+    font-family: 'Bungee Inline', cursive;
+    font-size:2rem;
+    text-align:center;
+    margin:5px;
+}
+
+
+table{
+    width: 95vw;
+    max-width: 960px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+tr {
+    height:40px;
+    border:1px solid black;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+tr:nth-child(2) {
+    background-color: rgb(255, 223, 0);
+}
+tr:nth-child(3) {
+    background-color: rgb(216, 216, 216);
+}
+tr:nth-child(4) {
+    background-color: rgb(173, 138, 86);
+}
+
+th {
+    font-size: 1.4rem;
+}
+
+
