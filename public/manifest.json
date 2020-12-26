@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "cssa_logo.png",
       "type": "image/png",
       "sizes": "2000x2000"
     }
