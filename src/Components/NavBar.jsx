@@ -5,27 +5,37 @@ const NavBar = (props) => {
     const currentAdmin = props.currentAdmin;
         
     const onClickBurger = () => {
-        const nav = document.querySelector('ul');
+        const nav = document.querySelector('header');
 
         nav.classList.toggle('nav-active');
     }
 
     const closeNav = () => {
-        const nav = document.querySelector('ul');
+        const nav = document.querySelector('header');
 
         nav.classList.remove('nav-active');
     }
     return(
         <header id='navbar'>
-
-            <div id='nav-logo-container'>
-                <a href='https://cssaccny.wixsite.com/ccnycssa'>
-                    <img src={logo} alt="logo" id="nav-logo" />
-                </a>
-                <h2 className='cn' id='nav-logo-text'>CCNYCSSA | 顶(顶)牛(流)挑战</h2>
+            <div className='nav-header'>
+                <div id='nav-logo-container'>
+                    <a href='https://cssaccny.wixsite.com/ccnycssa'>
+                        <img src={logo} alt="logo" id="nav-logo" />
+                    </a>
+                    <h2 className='cn' id='nav-logo-text'>CCNYCSSA</h2>
+                </div>
+                <div id='burger' onClick={onClickBurger}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
 
             <ul>
+                <div className='cn'>
+                    顶(顶)牛(流)挑战
+                </div>
+
                 <li onClick={closeNav}>
                     <a href='#intro-section'>Home</a>
                 </li>
@@ -56,12 +66,6 @@ const NavBar = (props) => {
                     ) 
                 }
             </ul>
-
-            <div id='burger' onClick={onClickBurger}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
 
         </header>
     )

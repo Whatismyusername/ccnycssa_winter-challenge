@@ -11,32 +11,44 @@
     font-family: 'Nova Round', cursive;
 }
 
+section {
+    margin: 150px 0;
+}
+
 .cn {
     font-family: chinese, cursive;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 header {
-    height: 80px;
-    width: 100vw;
-    top: 0;
-    left: 0;
+    height: 90px;
+    width: 90px;
+    top: 20px;
+    right:20px;
 
     box-sizing: border-box;
-    padding:10px 30px;
+    padding:10px;
+    border-radius: 50%;
     
     display:flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     position:fixed;
     background-color:rgb(255, 247, 245);
     z-index: 1;
+    transition: all 0.5s ease;
+}
+
+#burger{
+    display: block;
+    cursor: pointer;
+    float: right;
 }
 
 #nav-logo-container {
-    display:flex;
-    align-items: center;
+    display:none;
 }
 
 #nav-logo {
@@ -47,20 +59,52 @@ header {
 }
 
 header ul {
+    opacity: 0;
+
+    height: 0vh;
+    width: 100%;
+
     list-style-type: none;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color:rgb(255, 247, 245);
+    transition: all 0.5s ease;
+    z-index: 100;
 }
 header li {
-    float: left;
-    border-radius: 10px;
+    position: relative;
+    opacity: 0;
     transition: all 0.5s ease;
 }
     header li:hover {
-        background-color: white;
+        opacity: 1;
     }
+    header li::before {
+        content: '';
+        position: absolute;
+        width: 40px;
+        top: 0;
+        bottom: 0;
+        left: -35px;
+
+        background-image: url('../Images/nav_hover.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+        header li:hover::before {
+            opacity: 1;
+        }
 
 header li a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     display: block;
     color: black;
     opacity: 0.7;
@@ -70,61 +114,109 @@ header li a {
     transition: all 0.5s ease;
 }
 
-header li a:hover {
-    opacity: 1;
-}
-
-#burger{
-    margin-right: 10px;
-    display: none;
-}
-
 #burger div {
-    height: 3px;
-    width: 25px;
+    height: 5px;
+    width: 35px;
     background-color: black;
     margin: 5px;
-    
 }
 
-section {
-    margin: 150px 0;
-} 
+header[class='nav-active'] {
+    width: 30vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    border-radius: 0px;
+    display: unset;
+}
 
+header[class='nav-active'] .nav-header {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media only screen and (max-width: 1200px) {
-    body {
-        overflow-x: hidden;
+header[class='nav-active'] #nav-logo-container {
+    display:flex;
+    align-items: center;
+}
+
+header[class='nav-active'] ul {
+    opacity: 1;
+    height: 70vh;
+}
+
+header[class='nav-active'] ul li {
+    opacity: 0;
+}
+    header[class='nav-active'] ul li:nth-child(1) {
+        animation: nav-animatate-li 1s ease forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(2) {
+        animation: nav-animatate-li 1s ease 0.15s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(3) {
+        animation: nav-animatate-li 1s ease 0.3s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(4) {
+        animation: nav-animatate-li 1s ease 0.45s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(5) {
+        animation: nav-animatate-li 1s ease 0.6s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(6) {
+        animation: nav-animatate-li 1s ease 0.75s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(7) {
+        animation: nav-animatate-li 1s ease 0.9s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(8) {
+        animation: nav-animatate-li 1s ease 1.05s forwards;
     }
 
-    header ul {
-        position: absolute;
-
-        height: 92vh;
-        width: 50%;
-        right: 0;
-        top: 8vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-
-        background-color:rgb(255, 247, 245);
+@keyframes nav-animatate-li {
+    from {
+        opacity: 0;
         transform: translateX(100%);
-        transition: all 0.5s ease;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 800px){
+    header {
+        width: 60px;
+        height: 60px;
     }
 
-    .nav-active {
-        transform: translateX(0%);
+    #burger div {
+        height: 3px;
+        width: 25px;
+        background-color: black;
+        margin: 5px;
     }
 
-    #burger {
-        display: block;
+    header[class='nav-active'] {
+        width: 45vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+        border-radius: 0px;
     }
-
+    
     #nav-logo-text {
         display: none;
     }
 
+    .cn {
+        font-size: 1.3rem;
+    }
+
+    header li a {
+        font-size: 1rem;
+    }
 }
