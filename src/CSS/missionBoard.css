@@ -82,4 +82,9 @@
     .mission-nav ul li {
         font-size: 0.8rem;
     }
+
+    .mission-nav ul li:hover::before{
+        transition: all 1.3s ease;
+        border-bottom: 100px solid rgb(179, 255, 218);
+    }
 }
