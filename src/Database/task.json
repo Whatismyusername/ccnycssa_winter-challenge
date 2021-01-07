@@ -1,0 +1,209 @@
+{
+  "level" : {
+    "1": 3,
+    "2": 5,
+    "3": 7,
+    "4": 10,
+    "5": 13
+  },
+  "list" : {
+    "100" : {
+      "description" : "找一个猪队友，对视一分钟不能笑并录制视频",
+      "level" : 1,
+      "name" : "不能笑对视",
+      "submitFormat" : "提交视频"
+    },
+    "101" : {
+      "description" : "连续一周吃不一样的水果",
+      "level" : 1,
+      "name" : "吃不一样的水果",
+      "submitFormat" : "提交照片"
+    },
+    "102" : {
+      "description" : "连续一周在同一时间拍一张天气照片, 内容不限",
+      "level" : 1,
+      "name" : "天气打卡",
+      "submitFormat" : "提交照片"
+    },
+    "103" : {
+      "description" : "用不一样的色系颜色为主题搭配3套春夏/秋冬穿的服装",
+      "level" : 1,
+      "name" : "搭配服装",
+      "submitFormat" : "提交照片"
+    },
+    "104" : {
+      "description" : "演奏至少30秒的歌曲片段，乐器种类不限",
+      "level" : 1,
+      "name" : "乐器演奏",
+      "submitFormat" : "提交视频"
+    },
+    "105" : {
+      "description" : "通过视频录制方式在规定时间内吹起泡泡且泡泡不破",
+      "level" : 1,
+      "name" : "10秒吹泡泡糖",
+      "submitFormat" : "提交照片"
+    },
+    "106" : {
+      "description" : "5个自选emoji，模仿相对应的表情并自拍",
+      "level" : 1,
+      "name" : "Emoji表情模仿",
+      "submitFormat" : "提交照片"
+    },
+    "107" : {
+      "description" : "在5秒内完成下方绕口令 Picky people pick Peter Pan Peanut-Butter, 'tis the peanut-butter picky people pick.",
+      "level" : 1,
+      "name" : "英文绕口令挑战",
+      "submitFormat" : "提交录音/视频"
+    },
+    "108" : {
+      "description" : "拥抱亲人10秒，需通过视频记录过程",
+      "level" : 1,
+      "name" : "拥抱挑战",
+      "submitFormat" : "提交视频"
+    },
+    "200" : {
+      "description" : "十秒喝完一瓶500mL/16.9 FL OZ的矿泉水",
+      "level" : 2,
+      "name" : "十秒喝完一瓶水",
+      "submitFormat" : "提交视频"
+    },
+    "201" : {
+      "description" : "用Ins的Don’t Blink滤镜录下不眨眼的视频，需坚持25s",
+      "level" : 2,
+      "name" : "你瞅啥？",
+      "submitFormat" : "从INS保存并提交视频"
+    },
+    "202" : {
+      "description" : "做平板支撑运动并坚持2分钟",
+      "level" : 2,
+      "name" : "平板支撑",
+      "submitFormat" : "提交视频"
+    },
+    "203" : {
+      "description" : "尝试少玩手机，一周的总使用时间与上周对比减少20%则视为挑战成功",
+      "level" : 2,
+      "name" : "还是少玩手机吧",
+      "submitFormat" : "提交Screen Time截屏 （苹果和安卓）"
+    },
+    "204" : {
+      "description" : "在朋友圈里发一张所有人可见的丑照，需保留一天并获得5个不同人的点赞与评论",
+      "level" : 2,
+      "name" : "我怎么这么好看",
+      "submitFormat" : "提交截图"
+    },
+    "205" : {
+      "description" : "放一支笔在鼻子上，稳住不掉并维持20s",
+      "level" : 2,
+      "name" : "平衡挑战",
+      "submitFormat" : "提交视频"
+    },
+    "206" : {
+      "description" : "每次从第一个字开始以第二声读出-那些你想做又不敢做的事情-（比如第一次念整句句子“那”是念第二声，第二次念重新念句子是念“些”第二声，以此类推）",
+      "level" : 2,
+      "name" : "二声挑战",
+      "submitFormat" : "提交视频"
+    },
+    "300" : {
+      "description" : "一口吃掉一大勺的芥末, 录下并一分钟内不能喝水",
+      "level" : 3,
+      "name" : "哭吧哭吧不是罪",
+      "submitFormat" : "提交视频"
+    },
+    "301" : {
+      "description" : "每天做一份料理。料理可为任何类型，包括但不限于主食，甜品，零食，水果捞等",
+      "level" : 3,
+      "name" : "每日料理",
+      "submitFormat" : "提交拍照并配上日期"
+    },
+    "302" : {
+      "description" : "Quick Calculate | Math Playground 通过该网站进行数学计算游戏，达到至少30000分",
+      "level" : 3,
+      "name" : "数学不错嘛",
+      "submitFormat" : "提交截图"
+    },
+    "303" : {
+      "description" : "连续7天每天写至少100字的日记",
+      "level" : 3,
+      "name" : "动手写日记",
+      "submitFormat" : "提交照片"
+    },
+    "304" : {
+      "description" : "在嘴里含着水的情况下，被他人挠痒。坚持30s并不咽水不吞水视为挑战成功",
+      "level" : 3,
+      "name" : "不 怕 痒",
+      "submitFormat" : "提交视频"
+    },
+    "305" : {
+      "description" : "自选一句歌词, 比如bad romance，唱八个不同音阶，需明显听得出区别",
+      "level" : 3,
+      "name" : "音阶挑战",
+      "submitFormat" : "提交视频"
+    },
+    "400" : {
+      "description" : "做出任何跟新年有关的手工，例如剪纸，贺卡等",
+      "level" : 4,
+      "name" : "手巧小工匠",
+      "submitFormat" : "提交照片"
+    },
+    "401" : {
+      "description" : "拍摄任意土味视频，发布一条所有人可见的朋友圈，需获得五个不同人的点赞与评论",
+      "level" : 4,
+      "name" : "土味视频",
+      "submitFormat" : "提交截图"
+    },
+    "402" : {
+      "description" : "模仿任意一个角色，可以是服装cosplay，或是模仿该角色的声音和个人技，例如图图的动耳神功",
+      "level" : 4,
+      "name" : "模仿比拼",
+      "submitFormat" : "提交视频/录音"
+    },
+    "403" : {
+      "description" : "决定一本自己很久想读却没机会读的书，写大概250-350字读后感。若选择1-2句让你有感触的/很优美的句子，朗读出来并以视频/录音的形式记录下来，额外加3分。",
+      "level" : 4,
+      "name" : "读书挑战",
+      "submitFormat" : "提交照片/录音"
+    },
+    "404" : {
+      "description" : "找到一名队友，其中一方需蒙着眼睛喂对方吃掉一块奶油蛋糕或是一碗饭/面。",
+      "level" : 4,
+      "name" : "蒙眼喂饭",
+      "submitFormat" : "提交视频"
+    },
+    "500" : {
+      "description" : "每天至少跑步3km，至少持续4天",
+      "level" : 5,
+      "name" : "坚持跑步",
+      "submitFormat" : "使用KEEP或NIKE run club并截图"
+    },
+    "501" : {
+      "description" : "在与家人/朋友对话过程中，在不说明挑战缘由的前提下连续十句话以撒娇的语气进行回复对方",
+      "level" : 5,
+      "name" : "十句话撒娇",
+      "submitFormat" : "提交视频/录音"
+    },
+    "502" : {
+      "description" : "试着发掘可用材料，例如纸皮，泡沫，或是不用的衣物为流浪猫制作一个简单的家",
+      "level" : 5,
+      "name" : "给你一个家",
+      "submitFormat" : "提交照片"
+    },
+    "503" : {
+      "description" : "对亲人说面对面或打电话说我爱你，并对他们表达感激之心",
+      "level" : 5,
+      "name" : "传递真心",
+      "submitFormat" : "提交视频或录音"
+    },
+    "504" : {
+      "description" : "不论是否有对象，在父母面前用“肉麻做作”的语气假装和对象打电话，并说出以下台词：我也想宝贝啦~现在不可以哦！爸爸妈妈在旁边我会害羞的~爱你爱你mua~ 可视频录下父母反应或近距离录音",
+      "level" : 5,
+      "name" : "我才不吃狗粮",
+      "submitFormat" : "提交视频/录音"
+    },
+    "505" : {
+      "description" : "拍一张（你）融入在背景里的照片，并且不能几秒就找出你在哪。可以P图、变装、化妆、等等（不限于室内/室外）",
+      "level" : 5,
+      "name" : "变色龙挑战",
+      "submitFormat" : "提交照片"
+    }
+  }
+}

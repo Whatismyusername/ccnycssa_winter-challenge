@@ -1,0 +1,85 @@
+.mission-wrapper {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.mission-nav {
+    width: 100%;
+}
+
+.mission-container {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.mission-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.mission-nav ul li {
+    position: relative;
+    display: block;
+    outline: none;
+
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border-radius: 3px;
+    
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+    .mission-nav ul li:hover {
+        opacity: 0.8;
+    }
+    .mission-nav ul li::before {
+        position: absolute;
+        content: '';
+        border-bottom: 0px solid rgb(179, 255, 218);
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+    .mission-nav ul li:hover::before{
+        border-bottom: 5px solid rgb(179, 255, 218);
+    }
+
+    html body div .mission-nav-active {
+        opacity: 1;
+        pointer-events: none;
+    }
+    html body div .mission-nav-active::before {
+        transition: all 1.3s ease;
+        border-bottom: 100px solid rgb(179, 255, 218);
+    }
+
+@media only screen and (max-width: 800px) {
+    .mission-wrapper {
+        width: 95vw;
+    }
+    .mission-container {
+        grid-template-columns: minmax(0, 1fr);
+        height: 60vh;
+    }
+    .mission-nav ul li {
+        font-size: 0.8rem;
+    }
+}

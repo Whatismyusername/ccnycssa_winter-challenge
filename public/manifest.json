@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "顶(顶)牛(流)挑战",
+  "name": "CCNYCSSA | 顶(顶)牛(流)挑战",
   "icons": [
     {
-      "src": "cssa_logo.png",
+      "src": "favicon.ico",
       "type": "image/png",
       "sizes": "2000x2000"
     }

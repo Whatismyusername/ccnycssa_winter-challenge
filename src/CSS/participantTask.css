@@ -1,0 +1,79 @@
+.completedTask {
+    color: green;
+}
+
+.incompleteTask {
+    color: red;
+}
+
+.participantTask-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+    border: 1px double rgb(230, 230, 230);
+}
+
+#task-toggle-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+[id^="task-admin-input"] {
+    display: none;
+}
+
+.task-admin-toggle {
+    display: block;
+    width: 48px;
+    height: 24px;
+    color: transparent;
+    outline: none;
+}
+    .task-admin-toggle::before,
+    .task-admin-toggle::after {
+        content: "";
+        display: block;
+        position: absolute;
+        cursor: pointer;
+    }
+    .task-admin-toggle::before {
+        width: 48px;
+        height: 24px;
+        background-color: red;
+        border-radius: 100px;
+    }
+    .task-admin-toggle::after {
+        top: 0;
+        left: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow:0 0 2px rgba(0, 0, 0, 0.45);
+        transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        -webkit-transition: left 0.3s ease;
+    }
+    [id^="task-admin-input"]:checked + .task-admin-toggle::before {
+        background-color: green;
+    }
+    [id^="task-admin-input"]:checked + .task-admin-toggle::after {
+        left: 0px;
+    }
+
+    .participant-task-l1 {
+        color: rgb(150, 150, 150);
+    }
+    .participant-task-l2 {
+        color: rgb(180, 222, 196);
+    }
+    .participant-task-l3 {
+        color: rgb(167, 199, 224);
+    }
+    .participant-task-l4 {
+        color: rgb(218, 187, 223);
+    }
+    .participant-task-l5 {
+        color: rgb(253, 204, 176);
+    }

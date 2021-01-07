@@ -1,0 +1,16 @@
+#rules-section {
+    width: 100%;
+}
+#rules-img {
+    display: block;
+    height: 92vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 682px) {
+    #rules-img {
+        height: auto;
+        width: 95vw;
+    }
+}

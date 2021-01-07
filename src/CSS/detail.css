@@ -1,0 +1,67 @@
+#detail-wrapper {
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+    background:rgba(100, 100, 100, 0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#detail-card {
+    max-width: 700px;
+    width: 100vw;
+    max-height: 960px;
+    height: 95vh;
+    padding: 100px;
+    box-sizing:border-box;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 700px) {
+    #detail-card {
+        padding: 5vh 5vw;
+    }
+}
+
+#task-container {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+#exit-sign {
+    text-align: right;
+    animation: exit-sign-blink 1s linear infinite alternate;
+}
+
+    @keyframes exit-sign-blink {
+        from{ 
+            color: rgba(20, 20, 20, 1);
+        }
+        to {
+            color: rgba(20, 20, 20, 0);
+        }
+    }
+
+#detail-name {
+    font-size: 2rem;
+}
+#detail-note{
+    color: rgb(20, 20, 20);
+}
+
+hr{
+    margin: 5px 0;
+}
+
+#save-button {
+    font-size:1rem;
+    padding: 10px 5px;
+    background-color: rgb(255, 255, 255);
+}

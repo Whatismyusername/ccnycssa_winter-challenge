@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+@font-face {
+    font-family: chinese;
+    src: url(../Font/FZZJ-PYCHIYUNTJW.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nova Round', cursive;
+}
+
+.cn {
+    font-family: chinese, cursive;
+    font-size: 1.6rem;
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    padding:10px 30px;
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position:fixed;
+    background-color:rgb(255, 247, 245);
+    z-index: 1;
+}
+
+#nav-logo-container {
+    display:flex;
+    align-items: center;
+}
+
+#nav-logo {
+    height: 8vh;
+    float: left;
+    outline: none;
+    margin-right: 10px;
+}
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+header li {
+    float: left;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+    header li:hover {
+        background-color: white;
+    }
+
+header li a {
+    font-size: 1.2rem;
+    display: block;
+    color: black;
+    opacity: 0.7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+header li a:hover {
+    opacity: 1;
+}
+
+#burger{
+    margin-right: 10px;
+    display: none;
+}
+
+#burger div {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 5px;
+    
+}
+
+section {
+    margin: 150px 0;
+} 
+
+
+@media only screen and (max-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header ul {
+        position: absolute;
+
+        height: 92vh;
+        width: 50%;
+        right: 0;
+        top: 8vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background-color:rgb(255, 247, 245);
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #nav-logo-text {
+        display: none;
+    }
+
+}

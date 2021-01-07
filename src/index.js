@@ -1,36 +1,67 @@
 // Modules
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import * as firebase from 'firebase'
+import { auth } from "./firebase"
 
 // CSS
-import "./index.css"
+import "./CSS/index.css"
+import "./CSS/signIn.css"
 
 // Components
-import NavBar from "./NavBar"
-import LeaderBoard from "./LeaderBoard"
+import NavBar from "./Components/NavBar"
+import Intro from "./Components/Intro"
+import Rules from "./Components/Rules"
+import LeaderBoard from "./Components/LeaderBoard"
+import ChangeHistory from "./Components/ChangeHistory"
+import MissionBoard from "./Components/MissionBoard"
+import Rewards from "./Components/Rewards"
+import SignIn from "./Components/SignIn"
 
 // Pages
 import Error from "./Error"
 
 
 const App = () => {
+    const [currentAdmin, setCurrentAdmin] = useState(undefined);
 
-    const [userInput, setUserInput] = useState(new Set());
-    
+    useEffect(() => {
+        auth.signOut();
+    }, []);
+
+    auth.onAuthStateChanged((user) => {
+        if(!user) {
+            setCurrentAdmin(undefined);
+        }
+    });
+
     return (
         <Router>
             <Switch>
 
                 <Route exact path="/">
-                    <NavBar getInput={setUserInput} />
-                    <LeaderBoard userInput={userInput} isAdmin={false} />
+                    <NavBar />
+                    <Intro />
+                    <Rules />
+                    <MissionBoard />
+                    <LeaderBoard />
+                    <Rewards />
                 </Route>
 
                 <Route path="/admin">
-                    <NavBar getInput={setUserInput} />
-                    <LeaderBoard userInput={userInput} isAdmin={true} />
+                    {
+                        currentAdmin ? (
+                        <>
+                            <NavBar currentAdmin={currentAdmin} getAdmin={setCurrentAdmin} />
+                            <Intro />
+                            <Rules />
+                            <MissionBoard />
+                            <LeaderBoard currentAdmin={currentAdmin} />
+                            <ChangeHistory />
+                            <Rewards />
+                        </>
+                        ) : <SignIn getAdmin={setCurrentAdmin}/>
+                    }
                 </Route>
 
                 <Route path="*">

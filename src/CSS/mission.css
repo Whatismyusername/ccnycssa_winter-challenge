@@ -1,0 +1,155 @@
+[class^='mission-detail'] {
+    border: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    font-size: 1.2rem;
+    /* background-color: rgb(250, 250, 250); */
+}
+
+[class^='mission-detail'] > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[class^='mission-detail'] .mission-level {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    border-radius: 100%;
+}
+
+[class^='mission-detail'] * {
+    margin: 5px;
+}
+
+[class^='mission-detail'] hr {
+    margin-top: 10px;
+}
+
+.mission-detail-l1 {
+    border: 10px double rgb(150, 150, 150);
+}
+    .mission-detail-l1 hr {
+        border: 1px solid rgb(150, 150, 150);
+    }
+    .mission-detail-l1 .mission-level {
+        color:  rgb(150, 150, 150);
+    }
+
+.mission-detail-l2 {
+    border: 10px double rgb(180, 222, 196);
+}
+    .mission-detail-l2 hr {
+        border: 1px solid  rgb(180, 222, 196);
+    }
+    .mission-detail-l2 .mission-level {
+        color:  rgb(180, 222, 196);
+    }
+
+.mission-detail-l3 {
+    border: 10px double rgb(167, 199, 224);
+}
+    .mission-detail-l3 hr {
+        border: 1px solid  rgb(167, 199, 224);
+    }
+    .mission-detail-l3 .mission-level {
+        color:  rgb(167, 199, 224);
+    }
+
+.mission-detail-l4 {
+    
+    border: 10px double rgb(218, 187, 223);
+}
+    .mission-detail-l4 hr {
+        border: 1px solid rgb(218, 187, 223);
+    }
+    .mission-detail-l4 .mission-level {
+        color: rgb(218, 187, 223);
+    }
+
+.mission-detail-l5 {
+    border: 10px double rgb(253, 204, 176);
+}
+    .mission-detail-l5 hr {
+        border: 1px solid rgb(253, 204, 176);
+    }
+    .mission-detail-l5 .mission-level {
+        color: rgb(253, 204, 176);
+    }
+
+
+.mission-submit-format {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size:1rem;
+    color: rgba(20, 20, 20, 0.5);
+}
+.mission-description {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.mission-level {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.extra-info-wrapper {
+    margin: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+
+    background:rgba(100, 100, 100, 0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.extra-info-card {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: default;
+}
+
+.extra-info-card h1 {
+    text-align: center;
+}
+
+.extra-info-card img {
+    width: 400px;
+    height: auto;
+}
+
+.click-for-example-sign {
+    position: absolute;
+    bottom: 23px;
+    right: 0;
+    font-size: 1rem;
+    text-align: right;
+    animation: exit-sign-blink 2s linear infinite alternate;
+}
+
+    @keyframes exit-sign-blink {
+        from{ 
+            color: rgba(20, 20, 20, 0.5);
+
+        }
+        to {
+            color: rgba(20, 20, 20, 0);
+        }
+    }

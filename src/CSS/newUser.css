@@ -1,0 +1,45 @@
+.new-user-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(100, 100, 100, 0.8);
+}
+
+.new-user-card {
+    max-width: 480px;
+    width: 95vw;
+
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: default;
+}
+.new-user-card * {
+    margin:10px;
+}
+
+.new-user-card input {
+    padding:10px;
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.new-user-card button {
+    padding: 10px;
+    font-size: 1.5rem;
+    background: rgb(255, 255, 255);
+    width: 50%;
+}

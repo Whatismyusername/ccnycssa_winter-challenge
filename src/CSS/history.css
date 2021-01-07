@@ -1,0 +1,42 @@
+.log-container {
+    width: 95vw;
+    max-width: 1280px;
+    margin: 10px auto;
+
+    box-sizing: border-box;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+    .log-container * {
+        margin: 10px 0;
+    }
+
+.log-item {
+    background-color: rgb(230, 230, 230);
+    border: 10px double white;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.2rem;
+
+}
+    .log-item * {
+        margin: 5px;
+    }
+
+.log-email {
+    color: gray;
+    font-size: 1rem;
+}
+
+.log-task {
+    font-size: 1.1rem;
+}
+
+.red-font {
+    color: red;
+}
+
+.green-font {
+    color: green;
+}
