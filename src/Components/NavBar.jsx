@@ -49,6 +49,9 @@ const NavBar = (props) => {
                     <a href='#mission-board-section'>Mission Board</a>
                 </li>
                 <li onClick={closeNav}>
+                    <a href='#work-section'>Work Submission</a>
+                </li>
+                <li onClick={closeNav}>
                     <a href='#leaderboard-section'>Leader Board</a>
                 </li>
                 <li onClick={closeNav}>

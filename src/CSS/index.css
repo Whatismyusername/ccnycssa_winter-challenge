@@ -28,6 +28,7 @@ section {
 }
 
 header {
+    position: relative;
     height: 90px;
     width: 90px;
     top: 20px;
@@ -49,10 +50,51 @@ header {
 }
 
 #burger{
+    position: absolute;
+    top: 35px;
+    right: 27.5px;
+    width: 35px;
+    height: 25px;
+    opacity: 0.7;
     display: block;
     cursor: pointer;
     float: right;
+    transition: all 0.3s ease;
 }
+    #burger:hover {
+        opacity: 1;
+    }
+
+#burger div {
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    background-color: black;
+    transition: all 0.5s ease;
+}
+    #burger div:nth-child(2) {
+        top: 10px;
+    }
+    #burger div:nth-child(3) {
+        top: 20px;
+    }
+    header[class='nav-active'] #burger {
+        right:45px;
+        top: 55px;
+    }
+    header[class='nav-active'] #burger div {
+        top: 10px;
+    }
+    header[class='nav-active'] #burger div:nth-child(1) {
+        transform:rotate(45deg);
+    }
+    header[class='nav-active'] #burger div:nth-child(2) {
+        opacity: 0;
+    }
+    header[class='nav-active'] #burger div:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
 
 #nav-logo-container {
     display:none;
@@ -79,7 +121,6 @@ header ul {
     justify-content: space-evenly;
     align-items: center;
 
-    background-color:rgb(255, 247, 245);
     transition: all 0.5s ease;
     z-index: 100;
 }
@@ -121,13 +162,6 @@ header li a {
     transition: all 0.5s ease;
 }
 
-#burger div {
-    height: 5px;
-    width: 35px;
-    background-color: black;
-    margin: 5px;
-}
-
 header[class='nav-active'] {
     width: 30vw;
     height: 100vh;
@@ -162,25 +196,28 @@ header[class='nav-active'] ul li {
         animation: nav-animatate-li 1s ease forwards;
     }
     header[class='nav-active'] ul li:nth-child(2) {
-        animation: nav-animatate-li 1s ease 0.15s forwards;
+        animation: nav-animatate-li 1s ease 0.1s forwards;
     }
     header[class='nav-active'] ul li:nth-child(3) {
-        animation: nav-animatate-li 1s ease 0.3s forwards;
+        animation: nav-animatate-li 1s ease 0.2s forwards;
     }
     header[class='nav-active'] ul li:nth-child(4) {
-        animation: nav-animatate-li 1s ease 0.45s forwards;
+        animation: nav-animatate-li 1s ease 0.3s forwards;
     }
     header[class='nav-active'] ul li:nth-child(5) {
-        animation: nav-animatate-li 1s ease 0.6s forwards;
+        animation: nav-animatate-li 1s ease 0.4s forwards;
     }
     header[class='nav-active'] ul li:nth-child(6) {
-        animation: nav-animatate-li 1s ease 0.75s forwards;
+        animation: nav-animatate-li 1s ease 0.5s forwards;
     }
     header[class='nav-active'] ul li:nth-child(7) {
-        animation: nav-animatate-li 1s ease 0.9s forwards;
+        animation: nav-animatate-li 1s ease 0.6s forwards;
     }
     header[class='nav-active'] ul li:nth-child(8) {
-        animation: nav-animatate-li 1s ease 1.05s forwards;
+        animation: nav-animatate-li 1s ease 0.7s forwards;
+    }
+    header[class='nav-active'] ul li:nth-child(9) {
+        animation: nav-animatate-li 1s ease 0.8s forwards;
     }
 
 @keyframes nav-animatate-li {
@@ -200,12 +237,23 @@ header[class='nav-active'] ul li {
         height: 60px;
     }
 
+    #burger {
+        height: 19px;
+        width: 25px;
+        top: 20px;
+        right: 17.5px;
+    }
     #burger div {
         height: 3px;
         width: 25px;
         background-color: black;
-        margin: 5px;
     }
+        #burger div:nth-child(2) {
+            top: 8px;
+        }
+        #burger div:nth-child(3) {
+            top: 16px;
+        }
 
     header[class='nav-active'] {
         width: 45vw;
@@ -213,6 +261,15 @@ header[class='nav-active'] ul li {
         right: 0;
         top: 0;
         border-radius: 0px;
+    }
+
+    header[class='nav-active'] #burger {
+        right:35px;
+        top: 40px;
+    }
+
+    header[class='nav-active'] #burger div {
+        top: 8px;
     }
     
     #nav-logo-text {

@@ -9,7 +9,7 @@ const Mission = (props) => {
     const extraInfoList = [
         {
             id: 505,
-            name: "变色龙挑战",
+            name: "变色龙",
             info: info505
         },
         {
@@ -19,7 +19,7 @@ const Mission = (props) => {
         },
         {
             id: 103,
-            name: "搭配服装",
+            name: "服装搭配",
             info: info103
         }
     ];

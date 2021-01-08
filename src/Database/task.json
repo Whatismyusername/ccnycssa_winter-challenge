@@ -8,63 +8,63 @@
   },
   "list" : {
     "100" : {
-      "description" : "找一个猪队友，对视一分钟不能笑并录制视频",
+      "description" : "找一位朋友通过视频/面对面的方式，对视并互相做鬼脸，坚持一分钟不能笑。",
       "level" : 1,
-      "name" : "不能笑对视",
+      "name" : "我就不笑",
       "submitFormat" : "提交视频"
     },
     "101" : {
       "description" : "连续一周吃不一样的水果",
       "level" : 1,
-      "name" : "吃不一样的水果",
+      "name" : "缤纷水果",
       "submitFormat" : "提交照片"
     },
     "102" : {
-      "description" : "连续一周在同一时间拍一张天气照片, 内容不限",
+      "description" : "连续7天在同一时间（每日时差不超过5分钟）拍一张反映当天天气照片，拍摄地点与内容不限",
       "level" : 1,
-      "name" : "天气打卡",
+      "name" : "天气情报员",
       "submitFormat" : "提交照片"
     },
     "103" : {
-      "description" : "用不一样的色系颜色为主题搭配3套春夏/秋冬穿的服装",
+      "description" : "用不一样的色系颜色为主题，搭配共三套春夏/秋冬穿的服装",
       "level" : 1,
-      "name" : "搭配服装",
+      "name" : "服装搭配",
       "submitFormat" : "提交照片"
     },
     "104" : {
-      "description" : "演奏至少30秒的歌曲片段，乐器种类不限",
+      "description" : "使用乐器演奏至少30秒的歌曲片段，乐器种类不限",
       "level" : 1,
-      "name" : "乐器演奏",
+      "name" : "小小演奏家",
       "submitFormat" : "提交视频"
     },
     "105" : {
-      "description" : "通过视频录制方式在规定时间内吹起泡泡且泡泡不破",
+      "description" : "在十秒内记录从吃泡泡糖到成功吹起泡泡的过程",
       "level" : 1,
-      "name" : "10秒吹泡泡糖",
-      "submitFormat" : "提交照片"
+      "name" : "泡泡糖是可以吹的",
+      "submitFormat" : "提交视频"
     },
     "106" : {
-      "description" : "5个自选emoji，模仿相对应的表情并自拍",
+      "description" : "任意挑选五种表达不同情绪的emoji，模仿相对应的表情并自拍",
       "level" : 1,
-      "name" : "Emoji表情模仿",
+      "name" : "变脸大师",
       "submitFormat" : "提交照片"
     },
     "107" : {
       "description" : "在5秒内完成下方绕口令 Picky people pick Peter Pan Peanut-Butter, 'tis the peanut-butter picky people pick.",
       "level" : 1,
-      "name" : "英文绕口令挑战",
+      "name" : "舌头不打结",
       "submitFormat" : "提交录音/视频"
     },
     "108" : {
-      "description" : "拥抱亲人10秒，需通过视频记录过程",
+      "description" : "每次从第一个字开始以第二声读出“冬季宅家挑战”（比如第一次念整句句子“冬”是念第二声，第二次念重新念句子是念“季”第二声，以此类推）",
       "level" : 1,
-      "name" : "拥抱挑战",
+      "name" : "二声挑战",
       "submitFormat" : "提交视频"
     },
     "200" : {
       "description" : "十秒喝完一瓶500mL/16.9 FL OZ的矿泉水",
       "level" : 2,
-      "name" : "十秒喝完一瓶水",
+      "name" : "吨吨喝水",
       "submitFormat" : "提交视频"
     },
     "201" : {
@@ -96,13 +96,7 @@
       "level" : 2,
       "name" : "平衡挑战",
       "submitFormat" : "提交视频"
-    },
-    "206" : {
-      "description" : "每次从第一个字开始以第二声读出-那些你想做又不敢做的事情-（比如第一次念整句句子“那”是念第二声，第二次念重新念句子是念“些”第二声，以此类推）",
-      "level" : 2,
-      "name" : "二声挑战",
-      "submitFormat" : "提交视频"
-    },
+    },    
     "300" : {
       "description" : "一口吃掉一大勺的芥末, 录下并一分钟内不能喝水",
       "level" : 3,
@@ -122,10 +116,10 @@
       "submitFormat" : "提交截图"
     },
     "303" : {
-      "description" : "连续7天每天写至少100字的日记",
+      "description" : "记录活动期间发生的7个快乐瞬间，在平淡的生活中发掘小小幸福吧！",
       "level" : 3,
-      "name" : "动手写日记",
-      "submitFormat" : "提交照片"
+      "name" : "发现快乐",
+      "submitFormat" : "提交文字截图"
     },
     "304" : {
       "description" : "在嘴里含着水的情况下，被他人挠痒。坚持30s并不咽水不吞水视为挑战成功",
@@ -158,10 +152,10 @@
       "submitFormat" : "提交视频/录音"
     },
     "403" : {
-      "description" : "决定一本自己很久想读却没机会读的书，写大概250-350字读后感。若选择1-2句让你有感触的/很优美的句子，朗读出来并以视频/录音的形式记录下来，额外加3分。",
+      "description" : "静下心来读一本书，它可以是想了很久却没有机会读的，也可以是之前读过但仍然非常喜欢的书，读完后要用心写一篇400+字读后感",
       "level" : 4,
-      "name" : "读书挑战",
-      "submitFormat" : "提交照片/录音"
+      "name" : "温故-知新",
+      "submitFormat" : "提交文字截图"
     },
     "404" : {
       "description" : "找到一名队友，其中一方需蒙着眼睛喂对方吃掉一块奶油蛋糕或是一碗饭/面。",
@@ -172,7 +166,7 @@
     "500" : {
       "description" : "每天至少跑步3km，至少持续4天",
       "level" : 5,
-      "name" : "坚持跑步",
+      "name" : "冬天也要跑起来",
       "submitFormat" : "使用KEEP或NIKE run club并截图"
     },
     "501" : {
@@ -202,7 +196,7 @@
     "505" : {
       "description" : "拍一张（你）融入在背景里的照片，并且不能几秒就找出你在哪。可以P图、变装、化妆、等等（不限于室内/室外）",
       "level" : 5,
-      "name" : "变色龙挑战",
+      "name" : "变色龙",
       "submitFormat" : "提交照片"
     }
   }
