@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { auth } from '../firebase'
 
-import logo from '../Images/cssa_logo.png'
+import logo from '../Images/Logo/ccny.png'
 
 const SignIn = (props) => {
     // const [isSignedIn, setIsSignedIn] = useState(false);

@@ -1,0 +1,28 @@
+footer {
+    background-color: rgb(255, 247, 245);
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: auto;
+    width: 4vw;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-logo {
+        width: 10vw;
+    }
+}

@@ -15,6 +15,13 @@ section {
     margin: 150px 0;
 }
 
+.title{
+    font-size: 4rem;
+    text-align:center;
+    margin: 40px 0;
+    font-weight: bolder;
+}
+
 .cn {
     font-family: chinese, cursive;
     font-size: 2rem;

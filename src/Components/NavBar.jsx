@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../Images/cssa_logo.png"
+import logo from "../Images/Logo/ccny.png"
 
 const NavBar = (props) => {
     const currentAdmin = props.currentAdmin;

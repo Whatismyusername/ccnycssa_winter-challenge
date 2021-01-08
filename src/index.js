@@ -12,11 +12,13 @@ import "./CSS/signIn.css"
 import NavBar from "./Components/NavBar"
 import Intro from "./Components/Intro"
 import Rules from "./Components/Rules"
+import MissionBoard from "./Components/MissionBoard"
+import WorkSubmission from "./Components/WorkSubmission"
 import LeaderBoard from "./Components/LeaderBoard"
 import ChangeHistory from "./Components/ChangeHistory"
-import MissionBoard from "./Components/MissionBoard"
 import Rewards from "./Components/Rewards"
 import SignIn from "./Components/SignIn"
+import Footer from "./Components/Footer"
 
 // Pages
 import Error from "./Error"
@@ -44,8 +46,10 @@ const App = () => {
                     <Intro />
                     <Rules />
                     <MissionBoard />
+                    <WorkSubmission />
                     <LeaderBoard />
                     <Rewards />
+                    <Footer />
                 </Route>
 
                 <Route path="/admin">
@@ -56,9 +60,11 @@ const App = () => {
                             <Intro />
                             <Rules />
                             <MissionBoard />
+                            <WorkSubmission />
                             <LeaderBoard currentAdmin={currentAdmin} />
                             <ChangeHistory />
                             <Rewards />
+                            <Footer />
                         </>
                         ) : <SignIn getAdmin={setCurrentAdmin}/>
                     }
